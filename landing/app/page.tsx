@@ -9,7 +9,6 @@ import { contents } from '@/components/Content'
 import Image from "next/image";
 import { ContainerScroll } from '@/components/ui/container-scroll-animation';
 import img2 from '@/app/Asset/image.png';
-import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 // import { testimonials } from "@/components/Testimonials";
 function Home() {
 
@@ -33,7 +32,7 @@ function Home() {
             </div>
             <div className="w-max-[50%]">
               <div className="mx-16  ">
-                <VideoComponent url='/demo.mp4' />
+                <VideoComponent url='https://res.cloudinary.com/dwb8woqz8/video/upload/v1728128101/demo_1_dqtxcm.mp4' />
               </div>
             </div>
           </div>
