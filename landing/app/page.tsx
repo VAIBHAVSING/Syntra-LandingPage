@@ -1,6 +1,6 @@
-"use client"
+
 import { TypewriterEffect } from "../components/ui/typewriter-effect";
-import {Logos} from '../components/Logos'
+import { Logos } from '../components/Logos'
 import Button from "@/components/Button";
 import { Words, Words2 } from "@/components/Text";
 import VideoComponent from '@/components/VideoComponent';
@@ -9,8 +9,8 @@ import { contents } from '@/components/Content'
 import Image from "next/image";
 import { ContainerScroll } from '@/components/ui/container-scroll-animation';
 import img2 from '@/app/Asset/image.png';
-import {InfiniteMovingCards} from '@/components/ui/infinite-moving-cards'
-import { testimonials } from "@/components/Testimonials";
+import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
+// import { testimonials } from "@/components/Testimonials";
 function Home() {
 
   return (
@@ -19,12 +19,12 @@ function Home() {
         <div className=" xl:mx-24">
           <div className="flex justify-between pt-10">
             <span className=""> <Logos /></span>
-            <span className="flex justify-end mr-20">
+            <span className="flex justify-end xl:mr-20">
               <Button text="Book A Demo" />
             </span>
           </div>
           <div className="xl:flex w-auto">
-            <div className="p-4 w-max-[50%] w-[90rem] bg-secondary1 rounded-3xl">
+            <div className="p-4 w-max-[50%] 2xl:w-[90rem] bg-secondary1 rounded-3xl">
               <br /><br />
               <TypewriterEffect words={Words} />
               <br />
@@ -64,26 +64,27 @@ function Home() {
           />
         </ContainerScroll>
       </div>
+      
       <div>
         <div className=" text-black">
           <StickyScroll content={contents} contentClassName="text-black" />
           <div className="mr-48 flex justify-end"><Button text="Book A Demo" /></div>
         </div>
+      </div><br /><br />
+      {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center  overflow-hidden">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </div> */}
+      <div className="bg-primary1 h-48 flex justify-between pt-5">
+        <Logos />
+        <div className="flex justify-end">
+
+          <div><p data-v-fe8b47af="" className="text-white pr-10"> Reach out to the founders at <br /><a data-v-fe8b47af="" href="mailto:founders@syntra.com" className="email-link"> founders@syntra.com </a></p></div>
+        </div>
       </div>
-      <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
-    <div className="bg-primary1 h-48 flex justify-between pt-5">
-      <Logos/>
-      <div className="flex justify-end">
-        
-        <div><p data-v-fe8b47af="" className="text-white pr-10"> Reach out to the founders at <br /><a data-v-fe8b47af="" href="mailto:founders@syntra.com" className="email-link"> founders@syntra.com </a></p></div>
-      </div>
-    </div>
     </main>
   );
 }
