@@ -70,7 +70,7 @@ function Home() {
           <StickyScroll content={contents} contentClassName="text-black" />
           <div className="mr-48 flex justify-end"><Button text="Book A Demo" /></div>
         </div>
-      </div><br /><br />
+      </div><br />
       {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center  overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
