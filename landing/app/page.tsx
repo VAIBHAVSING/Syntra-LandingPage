@@ -1,19 +1,16 @@
 "use client"
 import { TypewriterEffect } from "../components/ui/typewriter-effect";
-import Logos from '../components/Logos'
+import {Logos} from '../components/Logos'
 import Button from "@/components/Button";
 import { Words, Words2 } from "@/components/Text";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import VideoComponent from '@/components/VideoComponent';
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { contents } from '@/components/Content'
-import img from './Asset/image.png';
 import Image from "next/image";
 import { ContainerScroll } from '@/components/ui/container-scroll-animation';
 import img2 from '@/app/Asset/image.png';
 import {InfiniteMovingCards} from '@/components/ui/infinite-moving-cards'
 import { testimonials } from "@/components/Testimonials";
-import img8 from '@/app/Asset/image8.png'
 function Home() {
 
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import logo from '../app/favicon.ico'
 import BackedbyYC from '../app/Asset/BackedByYC.png'
-export default function () {
+export function Logos() {
     return (
         <div className="flex">
             <div className="xl:ml-20 m-4 relative mt-6">

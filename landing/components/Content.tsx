@@ -70,7 +70,7 @@ export const contents=[{
     description: 'We recognize the various needs for specialty practices and offer a broad range of customizable add-ons to satisfy all your automation needs.',
     content:(<div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src={img5}
+          src={img6}
           width={400}
           height={400}
           className="h-full w-full object-cover"
