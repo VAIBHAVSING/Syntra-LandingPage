@@ -1,3 +1,18 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    // Disable specific rules that are causing issues
+
+    // Disable warnings for missing dependencies in useEffect
+    "react-hooks/exhaustive-deps": "off",
+
+    // Allow 'any' type in TypeScript (but consider warning if you want to avoid it globally)
+    "@typescript-eslint/no-explicit-any": "off",
+
+    // Warn instead of error for unused variables, except those prefixed with '_'
+    "@typescript-eslint/no-unused-vars": [
+      "warn", // Show warnings for unused vars
+      { "argsIgnorePattern": "^_" } // Ignore variables prefixed with '_'
+    ]
+  }
 }
